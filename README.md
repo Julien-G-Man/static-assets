@@ -1,90 +1,65 @@
-# Static Assets Repository
+# Static Assets Library
 
-This repository serves as a **centralized, reusable static asset store** for use across multiple projects, organizations, and platforms.
+This repository is a **centralized, reusable static asset library** designed to serve assets across multiple projects, organizations, and platforms.
 
-It is intentionally **not tied to any single project**. The goal is to avoid duplication, ensure consistency, and provide stable public URLs for assets used in web apps, emails, documents, and other digital products.
+It is intentionally **project-agnostic** and functions as a lightweight **public CDN** when deployed.
 
 ---
 
 ## Purpose
 
-- Centralize commonly used assets (icons, logos, UI elements)
-- Provide stable, CDN-hosted URLs for production use
-- Avoid re-uploading the same assets across different projects
-- Support usage in **emails**, **web applications**, and **landing pages**
+- Provide stable, public URLs for images and icons
+- Avoid duplicating the same assets across multiple projects
+- Support usage in:
+  - Transactional and marketing emails
+  - Web applications
+  - Landing pages
+  - Internal tools
 
-This repository functions as a lightweight **asset CDN** when deployed on platforms like **Vercel** or **Netlify**.
+This repository is infrastructure, not a single-project dependency.
+
+---
+
+## How It Works
+
+- All publicly accessible assets live inside the `public/` directory
+- Assets inside `public/` are served directly by the hosting platform
+- A simple HTML interface at `/` allows humans to browse and copy asset URLs
 
 ---
 
 ## Directory Structure
 
-The repository is organized by **asset type**, not by project.
-
 static-assets/
 
-├── logos/
-│ ├── enactus/
+├── index.html # Asset browser UI
+├── styles.css # UI styles
+├── script.js # Optional helper logic
 │
-├── icons/
-│ ├── social/
-│ └── ui/
-│
-├── email/
+├── public/
+│ ├── logos/
+│ │ ├── enactus/
+│ │ └── personal/
+│ │
+│ ├── icons/
+│ │ ├── social/
+│ │ └── ui/
+│ │
+│ └── email/
 │ └── buttons/
 │
-├── personal/
 └── README.md
 
 
-### Folder Intent
-
-#### `logos/`
-Brand or identity-related assets.
-- Logos are namespaced by organization or owner
-- Used in emails, websites, and documents
-
-#### `icons/social/`
-Reusable social media icons.
-- Platform-specific icons (Instagram, LinkedIn, Facebook, X, TikTok, etc.)
-- Icons may use official brand colors or neutral variants depending on context
-
-#### `icons/ui/`
-Generic UI icons used across applications.
-- Examples: arrows, checkmarks, indicators
-
-#### `email/`
-Assets specifically optimized for **email clients**.
-- Buttons and images tested for Gmail, Outlook, and mobile clients
-- Simple formats (PNG/JPG), lightweight, no SVGs
-
 ---
 
-## Asset Guidelines
+## Public Asset Access
 
-To ensure compatibility and longevity:
+Any file placed inside `public/` is accessible via a direct URL.
 
-- **Formats:** PNG or JPG only  
-- **No SVGs** for email usage  
-- **Public access required** (no auth-gated hosting)
-- **Optimized file sizes**
-- Explicit dimensions where possible
+Example:
 
-Icons may exist in:
-- Official brand colors (for web)
-- Neutral or monochrome variants (recommended for email)
+```text
+https://static-assets.vercel.app/icons/social/instagram.png
 
----
 
-## Hosting & Usage
-
-This repository is intended to be deployed as a **static site**.
-
-Typical deployment:
-- Vercel
-- Netlify
-
-Example usage after deployment:
-
-```html
-<img src="https://static-assets.vercel.app/icons/social/instagram.png" />
