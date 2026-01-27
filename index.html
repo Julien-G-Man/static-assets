@@ -2,25 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Static Assets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Static Library // Premium CDN</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 <body>
-  <h1>Static Assets Library</h1>
 
-  <section>
-    <h2>Social Icons</h2>
-    <div class="grid">
-      <div class="asset">
-        <img src="/icons/social/instagram.png" alt="Instagram">
-        <p>/icons/social/instagram.png</p>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-top">STATIC LIBRARY</span>
+        <span class="brand-sub">VALUENETWORK</span>
       </div>
-      <div class="asset">
-        <img src="/icons/social/linkedin.png" alt="LinkedIn">
-        <p>/icons/social/linkedin.png</p>
+      <ul class="nav-links">
+        <li><a href="#social">Socials</a></li>
+        <li><a href="#logos-general">Logos</a></li>
+        <li><a href="#enactus">Enactus</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="text" id="assetSearch" placeholder="Search assets...">
       </div>
     </div>
-  </section>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <img src="/public/logos/valuenetwork.png" class="hero-bg" alt="Hero Background">
+    <div class="hero-content">
+      <div class="badge-welcome">STATIC LIBRARY</div>
+      <h1>Centralized Assets.<br>Transform Your Workflow.</h1>
+      <p>High-fidelity logos, icons, and UI elements served directly from our global edge network.</p>
+      <div class="hero-btns">
+        <a href="#logos-general" class="btn-primary">Explore Logos</a>
+        <a href="#social" class="btn-outline">Social Icons</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="social">
+      <div class="section-title">
+        <h2>Social Media Icons</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="asset-grid" id="social-grid"></div>
+    </section>
+
+    <section id="logos-general">
+      <div class="section-title">
+        <h2>Corporate Logos</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="asset-grid" id="logos-grid"></div>
+    </section>
+
+    <section id="enactus">
+      <div class="section-title">
+        <h2>Enactus Collection</h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="asset-grid" id="enactus-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Static Library. All rights reserved.</p>
+  </footer>
+
+  <div id="toast" class="toast">Link copied to clipboard!</div>
 
   <script src="script.js"></script>
 </body>
