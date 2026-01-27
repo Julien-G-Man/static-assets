@@ -7,6 +7,7 @@ const assets = {
 };
 
 function createCard(name, folder) {
+    // Construct the path carefully
     const fullPath = `/${BASE_PATH}/${folder}/${name}`;
     const card = document.createElement('div');
     card.className = 'asset-card';
@@ -33,6 +34,7 @@ Object.keys(assets).forEach(key => {
 });
 
 function copyUrl(path) {
+    // This ensures it copies the full domain + the path
     const url = window.location.origin + path;
     navigator.clipboard.writeText(url).then(() => {
         const toast = document.getElementById('toast');

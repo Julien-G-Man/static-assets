@@ -45,7 +45,7 @@ static-assets/
 │ │ ├── social/
 │ │ └── ui/
 │ │
-│ └── email/
+│ ├── email/
 │ └── buttons/
 │
 └── README.md
