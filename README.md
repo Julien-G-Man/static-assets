@@ -59,6 +59,6 @@ Any file placed inside `public/` is accessible via a direct URL.
 Example:
 
 ```text
-https://static-assets.vercel.app/icons/social/instagram.png
+https://staticassets.netlify.app/icons/social/instagram.png
 
 
