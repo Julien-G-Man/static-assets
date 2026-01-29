@@ -61,4 +61,4 @@ Example:
 ```text
 https://staticassets.netlify.app/icons/social/instagram.png
 
-Accessible at [https://staticassets.netlify.app](https://staticassets.netlify.app)
+Accessible at https://staticassets.netlify.app
