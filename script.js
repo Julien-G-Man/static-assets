@@ -1,7 +1,7 @@
 const BASE_PATH = 'public'; 
 
 const assets = {
-    social: ['facebook.png', 'gmail.png', 'instagram.png', 'linkedin.png', 'telegram.png', 'telegram2.png', 'tiktok.png', 'twitter.png', 'youtube.png'],
+    social: ['facebook.png', 'gmail.png', 'instagram.png', 'linkedin.png', 'telegram.png', 'telegram2.png', 'tiktok.png', 'twitter.png', 'youtube.png', 'snapchat.png'],
     logos: ['canva.png', 'valuenetwork.png', 'founderslens.png', 'kce_logo_transparent.png', 'kce_logo.jpeg', 'knust-logo.png', 'KSB logo.png', 'lamla_logo.png', 'pivota_logo.png', 'zonda_logo.png'],
     enactus: ['404One.jpg', 'carisca.png', 'enactus-knust-logo-black.png', 'enactus-logo-black.png', 'kbi.png', 'knustLogo.png', 'map.png', 'Origami.png']
 };
