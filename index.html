@@ -27,17 +27,22 @@
 
   <nav class="navbar">
     <div class="nav-container">
-      <div class="brand">
+      <a href="/#" class="brand">
         <span class="brand-top">STATIC LIBRARY</span>
         <span class="brand-sub">VALUENETWORK</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#social">Socials</a></li>
-        <li><a href="#logos-general">Logos</a></li>
-        <li><a href="#enactus">Enactus</a></li>
-      </ul>
-      <div class="search-box">
-        <input type="text" id="assetSearch" placeholder="Search assets...">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#social">Socials</a></li>
+          <li><a href="#logos-general">Logos</a></li>
+          <li><a href="#enactus">Enactus</a></li>
+        </ul>
+        <div class="search-box">
+          <input type="text" id="assetSearch" placeholder="Search assets...">
+        </div>
       </div>
     </div>
   </nav>
@@ -84,6 +89,7 @@
 
   <footer class="footer">
     <p>&copy; 2026 Static Library. All rights reserved.</p>
+    <p>Made by Julien G. Manana</p>
   </footer>
 
   <div id="toast" class="toast">Link copied to clipboard!</div>
